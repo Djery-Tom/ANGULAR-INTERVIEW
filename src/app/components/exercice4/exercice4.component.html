@@ -1,0 +1,10 @@
+<h1>EXERCICE 6</h1>
+
+<p *ngIf="loading else list"> Please wait...</p>
+
+<ng-template #list>
+  <ul>
+    <li *ngFor="let b of bookList">{{b}}</li>
+  </ul>
+</ng-template>
+
